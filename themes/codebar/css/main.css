@@ -511,6 +511,25 @@ button.slick-prev.slick-arrow {
     color: #fff
 }
 
+/* ============= UI ELEMENTS ============ */
+
+/* embarassingly naff button to demo shortcodes */
+
+button {
+	padding: 0.5rem 2rem;
+	border: 1px solid #ccc;
+	text-transform: uppercase;
+	color: #444;
+	background: #fff;
+	transition: 500ms;
+}
+
+button:hover {
+	border: 1px solid #777;
+	color: #777;
+	background: #ccc;
+}
+
 /* ================ TOOLS =============== */
 
 .group:after {

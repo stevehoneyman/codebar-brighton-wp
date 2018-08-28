@@ -65,11 +65,16 @@ function codebar_widgets_init() {
 
  add_action( 'widgets_init', 'codebar_widgets_init' );  
 
-// shortcodes [basic button]
+// shortcodes 
+// button
+function button_test( $atts, $content = '') {
+    return '<button>' . $content . '</button>';
+}
+add_shortcode('button', 'button_test');
 
 // change post order
 
-/* ------------------------------------------------
+/* -----------------------------------------------------
 
 function change_post_order($query) {
   if ($query->is_home()) {
@@ -79,8 +84,7 @@ function change_post_order($query) {
 
 add_action('pre_get_posts', 'change_post_order');
 
------------------------------------------------- */
-
+/* ----------------------------------------------------*/
 
 
 
