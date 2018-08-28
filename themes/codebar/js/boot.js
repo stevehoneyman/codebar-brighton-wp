@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	// jquery to control navigation toggles
+	// nav toggle(s)
 
 	$( '.main-nav ul' ).parent().prepend( '<button class="menu-toggle"></button>' );
 		

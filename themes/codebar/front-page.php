@@ -37,14 +37,12 @@ $fp_blog_posts = new WP_Query(array(
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					
 					<!-- pull in featured images with width and height attributes removed-->
-					
 					<?php
         				$thumbnail_id = get_post_thumbnail_id();
 						$thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'thumbnail-size', true);
 					?>
 					
 					<!--<img src="<?php echo $thumbnail_url[0]; ?>">-->
-					
 					
 				</div>
 			

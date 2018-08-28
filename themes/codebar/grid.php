@@ -1,5 +1,5 @@
 <?php 
-/* Template Name:nth-child layout 
+/* Template Name:nth-child grid 
 */ 
 get_header(); ?>
 
