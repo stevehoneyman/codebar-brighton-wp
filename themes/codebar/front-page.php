@@ -59,7 +59,7 @@ $fp_blog_posts = new WP_Query(array(
 			while ($fp_blog_posts->have_posts()) : $fp_blog_posts->the_post(); ?>
 	
 				<div class="box">
-					<h2><?php the_title(); ?></h2>
+					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 				</div>
 				
 			<?php endwhile; 
