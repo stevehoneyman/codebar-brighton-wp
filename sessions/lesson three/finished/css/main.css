@@ -1,0 +1,169 @@
+/* ============= RESET ========= */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 1rem 0 0 0;
+	font-family: 'Open Sans';
+	background: #fff;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.group:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+
+/* ----------- navigation ---------- */
+
+nav {
+	margin-top: 1rem;
+}
+
+nav ul {
+	float: right;
+}
+
+ul li {
+	display: none;
+	margin-right: 1rem;
+}
+
+/* --------- nav media queries ------ */
+
+@media (min-width: 800px) {
+
+	nav	ul li {
+		display: inline-block;
+	}
+}
+
+/* ----------- containers ----------- */
+
+#site-wrapper {
+	width: 98%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header, 
+footer {
+	width: 100%;
+	min-height: 250px;
+	border: 1px #ccc solid;
+}
+
+header {
+	margin-bottom: 1rem;
+} 
+
+.content {
+	width: 100%;
+	padding: 1% 0.5%;
+	border: 1px solid #ccc;
+	margin-bottom: 1rem;
+}
+
+.full-width {
+	width: 100%;
+	border: 1px solid #ccc;
+	margin-bottom: 1rem;
+}
+
+.half-width {
+	width: 100%;
+	height: auto;
+	padding: 0.5%;
+	border: 1px solid #ccc;
+	margin: 0 0 1rem 0;
+}
+
+.half-width img {
+	margin-bottom: 1rem;
+}
+
+.box {
+	width: 100%; 
+	min-height: 120px;
+	padding-left: 0.5%;
+	border: 1px solid #ccc;
+	margin: 0 0 1rem 0;
+}
+
+/* ------ layout media queries ---------- */
+
+@media (min-width: 480px) {
+    .box, .half-width {
+        width: 50%; 
+		float: left;
+    }
+}
+
+@media (min-width: 800px) {
+    .box {
+        width: 25%; 
+     }
+}
+
+/* ------------- elements ---------- */
+
+.listing {
+	padding: 0.5rem;
+	border: 1px #ccc solid;
+	margin: 0.25rem 0.75rem 0.5rem 0;
+}
+
+.listing img {
+	margin: 0 0.5rem 0 0;
+	float: left;
+}
+
+/* =========== TYPOGRAPHY ========== */
+
+h1 {
+	float: left;
+}
+
+h2 {
+	margin: 0.5rem 0 0.5rem 0;
+}
+
+p {
+	margin: 0 0 1rem 0;
+}
+
+/* ============ LINKS ============ */
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #000;
+}
+
+/* ======== OVERIDES & TESTS ===========*/
+/* -------- temporary jQ test -------- */
+
+.test {
+	width: 250px;
+	height: 250px;
+	margin-bottom: 1rem; 
+	background: red;
+}
