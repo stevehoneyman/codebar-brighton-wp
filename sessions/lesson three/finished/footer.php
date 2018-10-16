@@ -1,7 +1,7 @@
 		
 
 		<footer role="contentinfo">
-			<small>Hardcoded info, could be replaced with looped, ACF or widget based content from the CMS</small>
+			<small>Hardcoded footer info, could be replaced with looped, ACF or widget based content from the CMS</small>
 		</footer>
 
 	</div><!-- close site-wrapper -->
