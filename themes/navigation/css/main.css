@@ -38,15 +38,6 @@ ul {
 	position: relative;
 }	
 
-.logo {
-	position: absolute;
-	top: 5px;
-	left: 2%;
-	width: 40px; 
-	height: 40px;
-	cursor: pointer;
-}
-
 /* ============= NAVIGATION =========================== */
 
 /* ---------------------------------------------------- */
