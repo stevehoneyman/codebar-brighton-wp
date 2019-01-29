@@ -12,7 +12,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body class="body">
 
 	<div id="site-wrapper">
 		<header role="banner">
@@ -22,11 +22,15 @@
 
 			<nav class="main-nav-container group">
 				<?php wp_nav_menu(array( 
-					'menu_class' => 'main-nav',
 					'menu_id' => 'nav',
-					'theme_location' => 'header-menu' 
+					'menu_class' => 'main-nav',
+					'theme_location' => 'header-menu',
+					'container' => ''
 				));?>	
 			</nav>
+		</header>	
+
+		<!--<?php echo get_template_directory_uri() ?>-->
 
 		
 

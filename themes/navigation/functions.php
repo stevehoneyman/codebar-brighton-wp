@@ -4,6 +4,7 @@
 // add stylesheet(s) 
 function set_theme_styles() {
 	wp_enqueue_style( 'main_stylesheet' , get_template_directory_uri() . '/css/main.css?v=' .time() );
+	// wp_enqueue_style( 'jq_multi_nav' , get_template_directory_uri() . '/css/nav-1.css' );
 }
 add_action('wp_enqueue_scripts', 'set_theme_styles');
 

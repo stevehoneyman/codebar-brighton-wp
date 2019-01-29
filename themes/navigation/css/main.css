@@ -49,7 +49,7 @@ ul {
 	right: 1%; 
 	width: 40px; 
 	height: 40px;
-	background-color: transparent;
+	background-color: none;
 	cursor: pointer;
 }
 
@@ -73,6 +73,9 @@ ul {
 	transform-origin: left center;
 }	
 
+/* because .navicon i exists we use the cascade, descendent selectors and specificty to power transformations */
+/* the on.click() event in jQuery toggles the class .show-nav class onto the body to allow the rules below to take effect */
+
 .show-nav .navicon i:first-child + i {
 	opacity: 0;
 }
@@ -80,7 +83,6 @@ ul {
 .show-nav .navicon i:first-child {
 	transform: rotate(45deg);
 }
-
 
 .show-nav .navicon i:last-child {
 	transform: rotate(-45deg);
@@ -109,6 +111,7 @@ ul	{
 
 .main-nav li:last-of-type {
 	margin-bottom: 16px;
+	border-bottom: none;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -118,15 +121,12 @@ ul	{
   position: relative;
 }
 
-.main-nav > li.menu-open .menu-toggle:after {
-  transform: translate3d(-50%, -25%, 0) rotate(-135deg);
-}
-
 .main-nav > li.menu-open ul {
   display: block;
   margin-top: 0;
 }
 
+/* sets up toggle basic styles (placement, tap area etc..) */
 .main-nav > li .menu-toggle {
   position: absolute;
   top: 0px;
@@ -142,6 +142,7 @@ ul	{
   -webkit-tap-highlight-color: transparent;
 }
 
+/* styles arrow */
 .main-nav > li .menu-toggle:after { 
   content: '';
   position: absolute;
@@ -153,6 +154,11 @@ ul	{
   border-bottom: 2px solid #ccc;
   transition: 300ms transform;
   transform: translate3d(-50%, -75%, 0) rotate(45deg);
+}
+
+/* styles post click */
+.main-nav > li.menu-open .menu-toggle:after {
+  transform: translate3d(-50%, -25%, 0) rotate(-135deg);
 }
 
 .main-nav > li ul { 
@@ -169,13 +175,6 @@ ul	{
 /* -------- navigation media queries ----- */
 
 @media screen and (min-width: 800px) {
-
-
-	.logo {
-		top: 13px;
-		width: 50px;
-		height: 50px;
-	}
 
 	.navicon {
 		display: none;
@@ -218,11 +217,11 @@ ul	{
 		opacity: 1;	
 		z-index: 100;
 	}
-
+/*
 	.main-nav > li ul li {
 		margin-left: .5rem;
 	}
-
+*/
 	.main-nav > li ul li a {
 		font-size: 0.75rem;
 	}
@@ -240,11 +239,7 @@ ul	{
 	padding: 8px 0;
 	margin: 0 auto;
 	background: #fff;
-}
-
-
-
-
+}	
 
 
 
